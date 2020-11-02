@@ -10,12 +10,11 @@ class ProductProvider with ChangeNotifier{
   String _pPrice;
   String _pCount;
   String _pId;
-  
   var uuid = Uuid();
+
   String get pName => _pName;
   String get pPrice => _pPrice;
   String get pCount => _pCount;
-  
   Stream<List<Product>> get products => firestoreService.getProducts();
 
   set changePName(String  pName){
