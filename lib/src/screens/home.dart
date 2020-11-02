@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
               return ListTile(
                 trailing: Icon(Icons.edit,),
                 title: Text(snapshot.data[index].pName),
-                subtitle: Text("₹ "+snapshot.data[index].pPrice+" /-"),
+                subtitle: Text("Price: ₹ "+snapshot.data[index].pPrice),
                 leading: Text(snapshot.data[index].pCount),
                 onTap: (){
                   Navigator.of(context).push(MaterialPageRoute(
